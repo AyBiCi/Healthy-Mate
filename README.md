@@ -1,4 +1,4 @@
-# :rage1: Healthy-Mate :rage1:
+# :turtle:Healthy-Mate:turtle:
 Praca na konkurs
 
 :zap::zap::zap:<b>Prezentacja aplikacji znajduje się w pliku "Projekt_aplikacji_healthy_mate.pdf"</b>:zap::zap::zap:
