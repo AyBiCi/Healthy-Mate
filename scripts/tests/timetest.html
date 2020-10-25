@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+<script src="test.js"></script>
+<script src="../time.js"></script>
+<script>
+
+	time = new TimeReader("12:34");
+	Test.assertEquals(time.hours, 12,"good hours read");
+	Test.assertEquals(time.minutes, 34,"good minutes read");
+	Test.assertEquals(time.toString(),"12:34", "good to string method test 1");
+	
+	time = new TimeReader("1:00");
+	Test.assertEquals(time.hours, 1,"good hours read");
+	Test.assertEquals(time.minutes, 0,"good minutes read");
+	Test.assertEquals(time.toString(),"01:00", "good to string method test 2");
+	time.addMinutes(60);
+	Test.assertEquals(time.toString(),"02:00", "good to string method test 3");
+	time.addMinutes(90);
+	Test.assertEquals(time.toString(),"03:30", "good to string method test 4");
+	time.addHours(2);
+	Test.assertEquals(time.toString(),"05:30", "good to string method test 5");
+	time.addHours(17.5);
+	Test.assertEquals(time.toString(),"23:00", "good to string method test 6");
+	time.addHours(1);
+	Test.assertEquals(time.toString(),"00:00", "good to string method test 7");
+	Test.assertEquals(time.getTimeStamp(3),"00:00-03:00", "good to string method test 7");
+	Test.showResults();
+	
+</script>
+</head>
+
+<body>
+
+</body>
+
+
+</HTML>

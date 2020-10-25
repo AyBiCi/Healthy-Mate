@@ -1,0 +1,244 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<TITLE> Healthy Mate </TITLE>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/png" href="assets/favicon.png"/>
+		
+		<!-- Znacznik, który umożliwia bootstrap'owi na poprawne działanie -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link rel="stylesheet" href="dependencies/bootstrap.min.css"/>
+		<LINK rel="stylesheet" href="styles/pages/main.css">
+		<LINK rel="stylesheet" href="styles/colors/lightmode.css">
+		
+		<!-- Zależności zewnętrzne -->
+		
+			<!-- Biblioteka, używana do bootstrapa i w skrypcie przy 
+				 ładowaniu strony -->
+			<script src="dependencies/jquery-3.5.1.min.js"></script>
+		
+		
+		<!-- Główne skrypty strony -->
+		
+			<!-- Skrypt, używany do obsługi wyświetlania rutyn -->
+			<script src="scripts/main/routineExplorer.js"></script>
+			
+			<!-- Biblioteka, używana do zapisywania danych użytkownika
+				 i manipulacji rutynami -->
+			<script src="scripts/data/user.js"></script>
+			
+			<!-- Skrypty, które pomagają utworzyć plany na dzień, 
+				 pokazywane w eksporatorze rutyn -->
+			<script src="scripts/data/lifePlan.js"></script>
+			
+			<!-- Skrypty obliczające ilość spożytych i spalonych kalorii -->
+			<script src="scripts/data/caloriesCount.js"></script>
+			
+			<!-- Skrypt, który obsługuje przycisk z plusem, w prawym, 
+				 dolnym rogu -->
+			<script src="scripts/main/newButton.js"></script>
+			
+			<!-- Skrypt, który obsługuje trzy zakładki, filtrujące treść dla 
+				 RoutineExplorer'a -->
+			<script src="scripts/main/filter.js"></script>
+			
+			<!-- Zawiera funkcje, które wykonują się podczas ładowania 
+				 głównej strony -->
+			<script src="scripts/main/main.js"></script>
+			
+			<!-- Klasa do manipulacji godziną i minutami w formacie
+				 hh:mm -->
+			<script src="scripts/util/time.js"></script>
+			<!-- Klasa używana do sprawdzania poprawności wypełnienia pól
+				 w formularzach -->
+			<script src="scripts/util/inputCheckers.js"></script>
+			
+			
+		<!-- Strony PopUp -->
+			
+			<!-- Główny skrypt, który obsługuje popUpy -->
+			<script src="scripts/popups/popUps.js"></script>
+			
+				<!-- BMI -->
+					<!-- Zawiera skrypty, które umożliwiają otworzenie dialogów 
+						 zmiany danych takich jak waga czy wysokość ciała 
+						 użytkownika -->
+					<script src="scripts/popups/bmi/actualizeData.js"></script>
+					
+					<!-- Oblicza i ustawia pozycję strzałki na pasku BMI -->
+					<script src="scripts/popups/bmi/bmiBar.js"></script>
+					
+				<!-- Właściwości rutyny -->
+				
+					<!-- Zawiera dialogi usuwania rutyn -->
+					<script src="scripts/popups/routine/routineDialogs.js"></script>
+					<!-- Zawiera skrypt wypełniania właściwości rutyny w popUpie
+						 który otwiera się po naciśnięciu rutyny -->
+					<script src="scripts/popups/routine/routineInfo.js"></script>
+				
+				<!-- Dodawanie rutyn -->
+					<!-- Zawiera skrypt dodawania rutyn i obliczania 
+						 spalonych kalorii -->
+					<script src="scripts/popups/addroutine/routineForm.js"></script>
+				<!-- Ustawianie diety -->
+					<!-- Zawiera skrypt dodawania diety -->
+					<script src="scripts/popups/diet/dietForm.js"></script>
+		
+	</HEAD>
+	
+	<BODY>
+		
+		<!-- Footer... -->
+		<DIV id="footer" >
+			<div id="hello-bar" >
+				<span class="welcome">Witaj </span>
+				<span id="usernamePlace"></span><font class="welcome">!</font>
+			</div>
+			<div class="bmi button2" onclick='PopUps.popUpSite("popbmi")'>BMI: <span class="bmiPlace"></span></div>
+		</div>
+		<div id="filter">
+			<div class="opt button2" id="buttall" onclick="Filter.All()">Wszystko </div>
+			<div class="opt button2" id="buttsport" onclick="Filter.Sport()">Sport </div>
+			<div class="opt button2" id="buttdiet" onclick="Filter.Diet()">Dieta</div>
+			<div class="opt button2" id="buttnote">Notyfikacje</div>
+		</div>
+		<div id="datefooter">
+			<input type="date" id="routineDate" oninput="RoutineExplorer.byRoutineDate(); ;">
+			<span id="weekday">Poniedziałek</span>: <span id="caloryBilans"></span> kcal
+		</div>
+		<!-- Miejsce na wydarzenia -->
+		<div class="content-fluid">
+		<div class="row">
+			<DIV id="main" class="col-sm-12 col-md-6 overflow-hidden">
+					
+			</DIV>
+		</div>
+		</div>
+		</div>
+		
+		<!-- Plus button -->	
+			<div id="action-menu">
+				<div class="action-button" style="width:130px" onclick='PopUps.popUpSite("poproutine"); NewButton.closeList();'>Nowa rutyna</div>
+				<div class="action-button" style="width:120px;" onclick='PopUps.popUpSite("popdiet"); NewButton.closeList();'>Nowa dieta</div>
+			</div>
+			<div id="new-action" class="button1" onclick='NewButton.snapList()'>+</div>
+		
+		
+		<!-- bootstrap -->
+		<script src="dependencies/popper.min.js"></script>
+		<script src="dependencies/bootstrap.min.js"></script>
+		
+		<div id="popup">
+			<div id="popback" class="button2" onclick="PopUps.closePopUp()">
+				<p>Powrót</p>
+			</div>
+			<div id="mainpop">
+				<div id="poproutine">
+					<h1> Dodaj rutynę </h1>
+					<form> 
+						Nazwa rutyny: <input type="text" id="routineName" ><br>
+						<p id="nameError"></p>
+						Dni tygodnia:
+						<br><input type="checkbox" id="monCheck"> Poniedziałek 
+						<br><input type="checkbox" id="thueCheck"> Wtorek  
+						<br><input type="checkbox" id="wenCheck"> Środa 
+						<br><input type="checkbox" id="thuCheck"> Czwartek
+						<br><input type="checkbox" id="friCheck"> Piątek
+						<br><input type="checkbox" id="satCheck"> Sobota
+						<br><input type="checkbox" id="sunCheck"> Niedziela<br> <br>
+
+						Czas rozpoczecia <input type="time" id="routineTime"/><br>
+						Czas trwania <input type="number" min='0' max='12' id="routineHours"/><br>
+						<p id="hoursError"></p>
+						
+						Dyscyplina 
+						<select id="routineCategory">
+							<option>bieganie</option>
+							<option>rower</option>
+							<option>fitness</option>
+							<option>siłownia</option>
+							<option>pływanie</option>
+							<option>tenis</option>
+							<option>trekking</option>
+						</select><br><br>Opis<br>
+						<textarea id="routineDescription">
+						</textarea>
+						<br><br>
+						<p id="calories"></p>
+						
+						
+						<br>
+						<input type="button" value="dodaj" onclick="RoutineForm.createRoutine()"/>
+						<script>
+
+						</script>
+						
+					</form>
+				</div>
+				<div id="popbmi">
+					<p> Twoje BMI to: </p> <font  color="red" size="50px" id="bmicol" class="bmiPlace"></font><br>
+					
+					<div class="bmibar">
+						<div class="bmibartile" style="width: 17.3%; background-color: white;border-radius: 10px 0px 0px 10px;"></div>
+						<div class="bmibartile" style="width: 25%; background-color: green"></div>
+						<div class="bmibartile" style="width: 19.23%; background-color: orange"></div>
+						<div class="bmibartile" style="width: 38.46%; background-color: red;border-radius: 0px 10px 10px 0px;"></div>
+					</div>
+					<div class="bmibar"><div id="bmiarrow" >^</div></div><br>
+					
+					Waga: <span class="weightPlace"></span> <input type="button" value="Aktualizuj" onclick="ActualizeData.Weight()"><br>
+					Wysokość: <span class="heightPlace"></span> <input type="button" value="Aktualizuj" onclick="ActualizeData.Height()"><br>
+				</div>
+				
+				<div id="popadnot">
+				
+				</div>
+				
+				<div id="popdiet">
+				<h1> Dodaj dietę </h1>
+					<form> 
+						<h5>Nazwa diety</h5><input type="text" id="dietName" ><br>
+						<p id="nameError"></p>
+
+						Godzina spożywania śniadania <input type="time" id="breakfastTime"/><br>
+						Czas spożywania śniadania <input type="number" min='0' max='2' id="breakfastHours"/><br>
+						Danie<br>
+						<textarea id="breakfastDescription">
+						</textarea><br>
+						Kalorie (kcal) <input type="number" min='0' id="breakfastCalories"/><br><br>
+						
+						
+						Godzina spożywania obiadu <input type="time" id="dinnerTime"/><br>
+						Czas spożywania obiadu <input type="number" min='0' max='2' id="dinnerHours"/><br>
+						Danie<br>
+						<textarea id="dinnerDescription">
+						</textarea><br>
+						Kalorie (kcal) <input type="number" min='0' id="dinnerCalories"/><br><br>
+						
+						Godzina spożywania kolacji <input type="time" id="supperTime"/><br>
+						Czas spożywania kolacji <input type="number" min='0' max='2' id="supperHours"/><br>
+						Danie<br>
+						<textarea id="supperDescription">
+						</textarea>
+						<br>
+						Kalorie (kcal) <input type="number" min='0' id="supperCalories"/><br><br>
+						
+						<input type="button" value="dodaj" onclick="DietForm.createDiet()"/>
+						
+					</form>
+				</div>
+				<div id="poproutineinfo">
+					Nazwa: <span id="routinename"></span><br>
+					Czas trwania: <span id="routinetimestamp"></span><br>
+					Występuje w dni: <span id="routinedays"></span><br>
+					Czynność: <span id="routinecategory"></span><br>
+					Kategoria: <span id="routinecategoryreal"></span><br>
+					Kalorie: <span id="routineCalories"></span><br>
+					Opis: <span id="routineDesc"></span><br>
+					<input type="button" value="Usuń" onclick="RoutineDialogs.deleteRoutine()">
+				</div>
+			</div>
+		</div>
+	</BODY>
+</HTML>

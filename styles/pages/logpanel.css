@@ -1,0 +1,53 @@
+body{
+				
+			}
+			#heart{
+				position: fixed;
+				right: 0px;
+				bottom: 30px;
+				height: 20%;
+			}
+			#time{
+				position: fixed;
+				left: 0px;
+				bottom: 0px;
+				height: 15%;
+				
+			}
+			#title{
+				width: 100%;
+				padding-top: 100px;
+				text-align: center;
+				font-size:20px;
+				font-family: "arial";
+				text-shadow: 1px 1px gray;
+				color: rgb(53,178,187);
+			}
+			#login-form{
+				padding-top: 80px;
+				width: 30%;
+				margin-left: auto;
+				margin-right: auto;
+				text-align:center;
+			}
+			input{
+				background: none;
+				border: 0px;
+				border-bottom: 1px solid rgb(83,208,217);
+				width: 100%;
+				text-align: center;
+				text-decoration: bold;
+				text-shadow: 1px 1px;
+			}
+			#but{
+				background: linear-gradient(91.05deg, #30BE9C 1.57%, #28BBC5 82.96%);
+				border-radius: 10px;
+				color: white;
+				font-size: 20px;
+				height: 30px;
+				line-height: 30px;
+			}
+			#but:hover{
+				background: linear-gradient(91.05deg, #50DEaC 1.57%, #58EBF5 82.96%);
+				cursor: pointer;
+			}

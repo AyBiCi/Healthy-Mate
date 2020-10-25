@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<HTML>
+	<HEAD>
+		<TITLE> Zaloguj się </TITLE>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="styles/colors/lightmode.css"/>
+		<link rel="stylesheet" href="styles/pages/newuser.css"/>
+		<script src="dependencies/jquery-3.5.1.min.js"></script>
+		<script src="scripts/data/user.js"></script>
+		<script src="scripts/newUser.js"></script>
+	</HEAD>
+
+	<BODY>
+		<img src="assets/heart.svg" id="heart">
+		<img src="assets/time.svg" id="time">
+		<div id="new-user-form">
+			<h2> Stwórz nowego użytkownika </h2>
+			Pseudonim: <input type="text" class="tinput" id="username"> <br><br>
+			Waga: <input type="text"class="tinput" id="weight"> KG<br><br>
+			Wzrost: <input type="text"class="tinput" id="height" > CM <br><br>
+			Rok urodzenia: <input type="text"class="tinput" id="birthyear"><br><br>
+			<input type="button" id="confbutt" onclick="createAccount()" value="Utwórz konto">
+			<br><br><div id="error"></div>
+		</div>
+	</BODY>
+</HTML>

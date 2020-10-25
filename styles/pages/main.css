@@ -1,0 +1,185 @@
+body{
+	overflow-x: hidden;
+}
+#footer{
+	height: 50px;
+	width: 100%;
+}
+#menu-button{
+	width: 50px;
+	height: 50px;
+	margin:0px;
+	padding: 0px;
+	position: fixed;
+	top:0px;
+	left:0px;
+	font-size: 50px;
+	line-height: 39px;
+	text-align: center;
+}
+#new-action{
+	width: 50px;
+	height: 50px;
+	border-radius: 25px 25px 25px 25px;
+	font-size: 50px;
+	text-align: center;
+	line-height:50px;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	box-shadow: -2px 2px 1px 1px gray;
+}
+#new-action:hover{
+	background: 
+}
+#hello-bar{
+	margin-left: 30px;
+	line-height: 50px;
+	width: 200px;
+	float: left;
+}
+.welcome{
+	color: #ddd !important;
+}
+#hello-bar{
+	color: #e00 !important;
+}
+#user-img{
+	width:40px;
+	height:40px;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: -2px 2px 1px 1px gray;
+}
+#action-menu{
+	width: 200px;
+	height: 70px;
+	position: fixed;
+	right: 20px;
+	bottom: 80px;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+.action-button{
+	height: 25px;
+	width: 180px;
+	border-radius: 15px 15px 15px 15px;
+	text-align: center;
+	line-height: 26px;
+	box-shadow: -2px 2px 1px 1px gray;
+	margin-bottom: 10px;
+	float:right;
+}
+
+#main{
+
+}
+.fl{
+	float: left;
+	margin-bottom: 10px;
+}
+#filter .opt{
+	float: left;
+	width: 25%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	border-top: 1px solid rgb(78,210,186);
+	border-bottom: 1px solid rgb(78,210,186);
+	border-right: 1px solid rgb(78,210,186);
+}
+#filter .opt:last-of-type{
+	border-right: 0px;
+}
+#filter ul{
+	list-style: none;
+}
+#filter{
+	height: 30px;
+	width: 100%;
+}
+.routine{
+	height: 100px;
+	width: 90%;
+	margin-left: 5%;
+	margin-bottom: 20px;
+	border: 1px solid rgb(78,210,186);
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: -2px 2px 1px 1px gray;
+	font-size: 20px !important;
+	padding: 20px;
+}
+.routine .name{
+	width:100%;
+}
+.routine .time{
+	width:100%;
+	text-align: right;
+}
+.bmi{
+	float: right;
+	width: 130px;
+	background: red;
+	padding: 15px;
+	height: 30px;
+	margin-top: 10px;
+	margin-right: 20px;
+	line-height: 0px;
+	text-align: center;
+	background: white;
+	border-radius: 15px 15px 15px 15px;
+	box-shadow: -2px 2px 1px 1px gray;
+}
+#main h1{
+	text-align: center;
+	padding-top: 100px;
+}
+#datefooter{
+	width: 100%;
+	height: 40px;
+	background: gray;
+	margin-bottom: 30px;
+}
+#routineDate{
+	margin-left: 20px;
+	margin-top: 5px;
+}
+#popup{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	display: none;
+}
+#popback{ 
+	color: white;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	font-size: 30px;
+	vertical-align: middle;
+}
+#mainpop{
+	width: 100%;
+	height: calc(100% - 40px);
+	overflow-y: scroll;
+	text-align: center;
+}
+#popbmi p{
+	font-size: 140%;
+}
+.bmibar{
+	height: 20px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bmibartile{
+	height: 20px;
+	float: left;
+}
+#bmiarrow{
+	width: 10px;
+	margin-left: 97%;
+}

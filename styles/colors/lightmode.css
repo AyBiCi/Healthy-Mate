@@ -1,0 +1,37 @@
+#footer{
+	background: rgb(53,188,197);
+}
+body{
+	background: #f2f2f2;
+	font-family: "Courier new";
+	font-weight: 900;
+}
+#menu-button{
+	background: rgb(83,208,217);
+	color: white;
+}
+#hello-bar{
+	color:black;
+}
+.action-button{
+	background: white;
+}
+.button1{
+	background: rgb(53,188,197);
+	color: white;
+}
+.button1:hover{
+	background: rgb(83,218,227);
+	cursor: pointer;
+}
+.button2{
+	background: rgb(48,190,156);
+	color: white;
+}
+.button2:hover{
+	background: rgb(83,208,217);
+	cursor: pointer;
+}
+#popup{
+	background: #f2f2f2;
+}
