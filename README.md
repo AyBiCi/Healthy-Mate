@@ -1,7 +1,7 @@
 # :rage1: Healthy-Mate :rage1:
 Praca na konkurs
 
-:zap::zap::zap:Prezentacja aplikacji znajduje się w pliku "Projekt_aplikacji_healthy_mate.pdf":zap::zap::zap:
+:zap::zap::zap:<b>Prezentacja aplikacji znajduje się w pliku "Projekt_aplikacji_healthy_mate.pdf"</b>:zap::zap::zap:
 
 # Problematyka
   Żyjemy w społeczeństwie, które zbyt mało zwraca uwagę na fakt, iż zdrowie tracimy przez złe nawyki żywieniowe, postawy ciała czy też brak ruchu.
