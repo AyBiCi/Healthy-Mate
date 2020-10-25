@@ -8,7 +8,7 @@ Praca na konkurs
 
 &emsp; Aplikacja opisana poniżej ma nam pomóc przekształcić wyuczone złe praktyki i zamienić je na dobre. Będzie ona używała notyfikacji i alarmów aby pomóc przypominać o zdrowych posiłkach przy odpowiedniej porze czy też przypominać o treningu ciała. Dodatkowo, będzie mogła służyć jako aplikacja do planowania i przypominania o naszych rutynowych obowiązkach lub też o pojedynczych aktywnościach.
 
-# :hear_no_evil:Stan Prac:turtle:
+# :hear_no_evil: Stan Prac :turtle:
 &emsp; Aplikacja nie została jeszcze ukończona. Brakuje w niej jeszcze wielu funkcji, nie została ona przekonwertowana na aplikację PWA, z tego względu nie posiada kodu, dotyczącego notyfikacji.
 
 # :tropical_fish: Testowanie :leopard:
