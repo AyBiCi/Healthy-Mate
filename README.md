@@ -9,7 +9,7 @@ Praca na konkurs
 &emsp; Aplikacja opisana poniżej ma nam <b>pomóc</b> przekształcić wyuczone <b>złe</b> praktyki i zamienić je na <b>dobre</b>. Będzie ona używała <b>notyfikacji i alarmów</b> aby pomóc przypominać o <b>zdrowych posiłkach przy odpowiedniej porze</b> czy też przypominać o <b>treningu ciała</b>. Dodatkowo, będzie mogła służyć jako aplikacja do <b>planowania</b> i <b>przypominania</b> o naszych <b>rutynowych obowiązkach</b> lub też o <b>pojedynczych aktywnościach</b>.
 
 # :beer::hear_no_evil: Stan Prac :turtle::beer:
-&emsp; Aplikacja <b>nie została jeszcze ukończona.</b> Brakuje w niej jeszcze <b>wielu funkcji</b>, nie została ona przekonwertowana na aplikację <b>PWA</b>, z tego względu nie posiada kodu np. dotyczącego notyfikacji.
+&emsp; Aplikacja <b>nie została jeszcze ukończona.</b> Brakuje w niej jeszcze <b>wielu funkcji</b>, nie została ona przekonwertowana na aplikację <b>PWA</b>, z tego względu<b> nie posiada kodu</b> np. dotyczącego notyfikacji.
 
 # :tropical_fish: Testowanie :leopard:
 &emsp; Aby przetestować aplikację, wystarczy pobrać całe repozytorium i uruchomić index.html w przeglądarce, <b>która pozwala na użycie HTML5 Web Storage offline, np. Google Chrome.</b>
