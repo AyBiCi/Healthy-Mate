@@ -1,4 +1,4 @@
-# :heart:Healthy-Mate:heart:
+# :heart:Healthy-Mate:broken_heart:
 Praca na konkurs
 
 :zap::zap::zap:<b>Prezentacja aplikacji znajduje się w pliku "Projekt_aplikacji_healthy_mate.pdf"</b>:zap::zap::zap:
